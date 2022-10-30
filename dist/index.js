@@ -171,13 +171,16 @@ function shuffle(moves) {
   }
   return moves;
 }
+var engine_default = search;
 
 // src/index.ts
 var Game = {
   Board: board_default,
-  search
+  search: engine_default
 };
 var src_default = Game;
 export {
-  src_default as default
+  Board,
+  src_default as default,
+  search
 };
