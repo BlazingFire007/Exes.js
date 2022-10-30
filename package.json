@@ -1,7 +1,7 @@
 {
   "name": "exesjs",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Solution for managing tic tac toe and similar games.",
   "main": "index.js",
   "keywords": [
@@ -20,10 +20,7 @@
   "author": "Eli Richardson",
   "license": "MIT",
   "exports": {
-    ".": {
-      "require": "./cjs/index.js",
-      "import": "./index.js"
-    }
+    "import": "./dist/index.js"
   },
   "scripts": {
     "build": "node build.js"
@@ -32,8 +29,5 @@
     "@types/node": "^18.11.7",
     "esbuild": "^0.15.12",
     "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "typedoc": "^0.23.19"
   }
 }
