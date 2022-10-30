@@ -2,11 +2,20 @@
   "name": "tic-tac-toe",
   "type": "module",
   "version": "1.0.0",
-  "description": "Engine for tic-tac-toe",
+  "description": "Solution for managing tic tac toe and similar games.",
   "main": "index.js",
+  "keywords": [
+    "tic-tac-toe",
+    "game",
+    "board",
+    "engine",
+    "negamax",
+    "minimax",
+    "exes"
+  ],
   "author": "Eli Richardson",
   "license": "MIT",
-    "exports": {
+  "exports": {
     ".": {
       "require": "./cjs/index.js",
       "import": "./index.js"
