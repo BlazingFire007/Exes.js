@@ -7,7 +7,7 @@ const defaults = {
   turn: 1 as Stone,
 };
 
-class Board {
+export class Board {
   width: number;
   height: number;
   size: number;

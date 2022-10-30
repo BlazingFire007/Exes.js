@@ -1,5 +1,5 @@
 import { Board, Position } from './types';
-export default function search(b: Board, depth: number) {
+export function search(b: Board, depth: number) {
   const moves = shuffle(b.moves);
   let bestScore = -Infinity;
   let bestMove = moves[0];
@@ -46,3 +46,5 @@ function shuffle(moves: Position[]) {
   }
   return moves;
 }
+
+export default search;
