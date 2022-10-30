@@ -3,9 +3,15 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Engine for tic-tac-toe",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "author": "Eli Richardson",
   "license": "MIT",
+    "exports": {
+    ".": {
+      "require": "./cjs/index.js",
+      "import": "./index.js"
+    }
+  },
   "scripts": {
     "build": "node build.js"
   },
