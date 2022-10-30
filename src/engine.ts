@@ -11,7 +11,6 @@ export function search(b: Board, depth: number) {
     b.move(move);
     const score = -negamax(b, depth - 1, -beta, -alpha);
     b.undo(move);
-    console.log(`Move: ${move}, Score: ${score}`);
     if (score > bestScore) {
       bestScore = score;
       bestMove = move;
