@@ -4,6 +4,7 @@
   "version": "1.0.5",
   "description": "Solution for managing tic tac toe and similar games.",
   "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "tic-tac-toe",
     "game",
@@ -23,7 +24,7 @@
     "import": "./dist/index.js"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js && tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@types/node": "^18.11.7",
