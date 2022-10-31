@@ -1,10 +1,10 @@
 {
   "name": "exesjs",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Solution for managing tic tac toe and similar games.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "tic-tac-toe",
     "game",
