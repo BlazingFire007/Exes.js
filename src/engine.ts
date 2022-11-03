@@ -1,4 +1,5 @@
-import { Board, Position } from './types';
+import Board from './board';
+import { Position } from './types';
 export function search(b: Board, depth: number) {
   const moves = shuffle(b.moves);
   let bestScore = -Infinity;

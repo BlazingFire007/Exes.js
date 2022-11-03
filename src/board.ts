@@ -15,7 +15,7 @@ export class Board {
   internal: Stone[];
   turn: Stone;
   constructor(options?: Options) {
-    if (!options) options = defaults;
+    options = Object.assign({}, defaults, options);
     this.width = options.width;
     this.height = options.height;
     this.size = options.width * options.height;
