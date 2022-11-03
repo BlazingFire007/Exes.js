@@ -2,10 +2,10 @@ declare type Position = number;
 declare type Stone = -1 | 0 | 1;
 declare type Move = number | VerboseMove;
 interface Options {
-    width: number;
-    height: number;
-    winLength: number;
-    turn: Stone;
+    width?: number;
+    height?: number;
+    winLength?: number;
+    turn?: Stone;
 }
 interface VerboseMove {
     row: number;

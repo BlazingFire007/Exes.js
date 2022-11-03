@@ -18,7 +18,8 @@
   "author": "Eli Richardson",
   "license": "MIT",
   "exports": {
-    "import": "./dist/index.js"
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
   },
   "scripts": {
     "build": "node build.js && tsc -p tsconfig.json"

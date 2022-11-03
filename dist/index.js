@@ -14,11 +14,11 @@ var Board = class {
   turn;
   constructor(options) {
     options = Object.assign({}, defaults, options);
-    this.width = options.width;
-    this.height = options.height;
-    this.size = options.width * options.height;
-    this.winLength = options.winLength;
-    this.turn = options.turn;
+    this.width = options.width || defaults.width;
+    this.height = options.height || defaults.height;
+    this.size = this.width * this.height;
+    this.winLength = options.winLength || defaults.winLength;
+    this.turn = options.turn || defaults.turn;
     this.internal = [...Array(this.size)].map(() => -1);
     return this;
   }
